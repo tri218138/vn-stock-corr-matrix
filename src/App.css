@@ -313,3 +313,324 @@
 .github-star svg {
   color: #eac54f;
 }
+
+/* Portfolio Calculator */
+.portfolio-calc {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.1);
+}
+
+.portfolio-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #202124;
+  margin-bottom: 0.3rem;
+}
+
+.portfolio-desc {
+  font-size: 0.85rem;
+  color: #5f6368;
+  margin-bottom: 1.2rem;
+}
+
+.portfolio-desc code {
+  background: #f1f3f4;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+.portfolio-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 0.82rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.portfolio-btn:hover {
+  background: #1557b0;
+}
+
+.portfolio-btn.secondary {
+  background: #fff;
+  color: #3c4043;
+}
+
+.portfolio-btn.secondary:hover {
+  background: #f1f3f4;
+}
+
+/* Weights Grid */
+.weights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+
+.weight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.weight-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #202124;
+}
+
+.weight-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.weight-input-wrapper:focus-within {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15);
+}
+
+.weight-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  width: 0;
+  min-width: 0;
+  -moz-appearance: textfield;
+}
+
+.weight-input::-webkit-inner-spin-button,
+.weight-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.weight-unit {
+  padding: 0.4rem 0.5rem;
+  background: #f8f9fa;
+  color: #70757a;
+  font-size: 0.82rem;
+  border-left: 1px solid #dadce0;
+}
+
+.weight-normalized {
+  font-size: 0.7rem;
+  color: #70757a;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.weight-total {
+  margin-top: 0.8rem;
+  padding: 0.6rem 0;
+  font-size: 0.88rem;
+  color: #3c4043;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-top: 1px solid #e8eaed;
+}
+
+.weight-note {
+  font-size: 0.78rem;
+  color: #9aa0a6;
+}
+
+/* Results */
+.portfolio-results {
+  margin-top: 1.5rem;
+}
+
+.formula-section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #202124;
+  margin-bottom: 0.5rem;
+}
+
+.formula-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.82rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.formula-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.formula-label {
+  min-width: 2.5rem;
+  color: #5f6368;
+  font-weight: 500;
+  text-align: right;
+}
+
+.formula-eq {
+  color: #9aa0a6;
+}
+
+.formula-value {
+  color: #202124;
+  word-break: break-all;
+}
+
+.formula-line.main-formula {
+  padding: 0.3rem 0;
+  font-size: 0.88rem;
+}
+
+.formula-line.main-formula strong {
+  color: #1a73e8;
+  font-size: 1rem;
+}
+
+/* Result Cards */
+.result-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.result-card {
+  padding: 1rem;
+  border-radius: 10px;
+  background: #f8f9fa;
+  border: 1px solid #e8eaed;
+  text-align: center;
+}
+
+.result-card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202124;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.result-card-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5f6368;
+  margin-top: 0.2rem;
+}
+
+.result-card-note {
+  font-size: 0.75rem;
+  color: #9aa0a6;
+  margin-top: 0.2rem;
+}
+
+.result-card.high {
+  border-color: #f4c7c3;
+  background: #fef7f6;
+}
+
+.result-card.high .result-card-value {
+  color: #c5221f;
+}
+
+.result-card.low {
+  border-color: #b7e1cd;
+  background: #f4faf7;
+}
+
+.result-card.low .result-card-value {
+  color: #137333;
+}
+
+.result-card.mid {
+  border-color: #fce8b2;
+  background: #fef9ef;
+}
+
+.result-card.mid .result-card-value {
+  color: #b06000;
+}
+
+/* Pair Breakdown */
+.pair-breakdown {
+  margin-top: 1.2rem;
+}
+
+.pair-toggle {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #1a73e8;
+  cursor: pointer;
+  padding: 0.4rem 0;
+}
+
+.pair-toggle:hover {
+  text-decoration: underline;
+}
+
+.pair-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.pair-table th {
+  background: #f1f3f4;
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  font-weight: 600;
+  color: #3c4043;
+  border-bottom: 2px solid #dadce0;
+  white-space: nowrap;
+}
+
+.pair-table td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #e8eaed;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.78rem;
+}
+
+.pair-table .pair-name {
+  font-family: inherit;
+  font-weight: 500;
+  color: #202124;
+}
+
+.pair-table .pos {
+  color: #137333;
+}
+
+.pair-table .neg {
+  color: #c5221f;
+}

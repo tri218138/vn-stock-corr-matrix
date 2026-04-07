@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { useCorrelationData, filterCorrelation } from './useCorrelationData'
 import Heatmap from './Heatmap'
+import PortfolioCalculator from './PortfolioCalculator'
 import type { CorrelationData } from './types'
 import './App.css'
 
@@ -231,6 +232,7 @@ export default function App() {
             <p className="results-tickers">{filtered.tickers.join(' · ')}</p>
           </div>
           <Heatmap data={filtered} />
+          <PortfolioCalculator data={filtered} />
         </div>
       )}
 
