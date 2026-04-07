@@ -283,4 +283,33 @@
   width: 100%;
   margin-top: auto;
   background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.github-star {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #24292f;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: inherit;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.github-star:hover {
+  background: #eaeef2;
+  border-color: #afb8c1;
+}
+
+.github-star svg {
+  color: #eac54f;
 }
